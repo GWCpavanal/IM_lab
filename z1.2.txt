@@ -12,11 +12,13 @@ namespace ConsoleApp5
         {
             double x, a;
 
-            x = 0.2152;
+            //x = 0.2152;
             //x = 0.2500;
+            x = 0.064; // трабл с округлением походу
             for (int i = 0; i < 100; ++i)
-            {               
+            {
                 x = x * x;
+                Console.Write(x + " ");
                 x = x * 100;
                 a = Math.Truncate(x);
                 x = x - a;
@@ -24,7 +26,7 @@ namespace ConsoleApp5
                 x = Math.Truncate(x);
                 x = x / 10000;
                 Console.WriteLine(" x = " + x);
-            }            
+            }
 
             Console.ReadKey();
         }
